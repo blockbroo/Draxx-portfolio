@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(to bottom, #4b0082, #000000); /* Purple to black */
+  color: white;
+  overflow-x: hidden;
+  border: 6px solid;
+  border-image: linear-gradient(to bottom, #4b0082, #000000) 1;
+  border-radius: 20px;
+  box-shadow: 0 0 30px #8a2be2;
+  padding: 10px;
+  text-shadow: 0 0 5px #8a2be2;
+}
+
+.header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 0 25px #8a2be2;
+}
+
+.channel-name {
+  font-size: 2em;
+  margin-top: 15px;
+  color: #00ffff;
+  border-radius: 20px;
+  box-shadow: 0 0 25px #8a2be2;
+  transition: all 0.5s ease;
+  display: inline-block;
+  padding: 10px 20px;
+  text-shadow: 0 0 10px #8a2be2;
+}
+
+.channel-name:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #8a2be2;
+}
+
+.play-btn {
+  display: block;
+  margin: 25px auto 0 auto;
+  padding: 12px 25px;
+  background: #220044;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 12px #8a2be2;
+  transition: all 0.3s ease;
+  font-size: 1em;
+}
+
+.play-btn::before {
+  content: "🎵 ";
+}
+
+.play-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #8a2be2, 0 0 40px #8a2be2;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+.thumbnail {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #8a2be2;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 1.1em;
+  background-color: rgba(255, 255, 255, 0.05);
+  margin-top: 40px;
+  border-top: 2px solid #8a2be2;
+}
